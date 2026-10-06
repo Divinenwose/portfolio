@@ -8,8 +8,7 @@ import { ease } from "@/lib/utils";
 
 /**
  * Editorial name plate + portrait. Frame reveals once, the photo drifts
- * slowly inside it as you scroll (transform only), and eases from a muted
- * grade to full colour on hover.
+ * slowly inside it as you scroll (transform only), and keeps its natural colour.
  */
 export default function Portrait() {
   const ref = useRef<HTMLDivElement>(null);
@@ -71,13 +70,12 @@ export default function Portrait() {
                 alt="Portrait of Nwose Onyeka Divine, arms crossed in a striped tee"
                 fill
                 sizes="(min-width: 1024px) 520px, (min-width: 640px) 480px, 90vw"
-                className="object-cover object-[50%_18%] [filter:grayscale(0.4)_contrast(1.06)_brightness(0.9)] transition-[filter,transform] duration-[1200ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.03] group-hover:[filter:grayscale(0)_contrast(1.02)_brightness(1)]"
+                className="object-cover object-[50%_18%] transition-transform duration-[1200ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
               />
             </motion.div>
 
-            {/* grade: sink the beige wall into the dark theme, warm the shadows */}
-            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-transparent" />
-            <div aria-hidden className="pointer-events-none absolute inset-0 bg-ember/10 mix-blend-soft-light" />
+            {/* soft shadow at the base so the caption stays legible; photo colour untouched */}
+            <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
             <div aria-hidden className="grain pointer-events-none absolute inset-0" />
 
             {/* crop marks, echoing the hero spec card */}
