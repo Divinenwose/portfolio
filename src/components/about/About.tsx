@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import ScrubText from "@/components/ui/ScrubText";
 import Counter from "@/components/ui/Counter";
 import Reveal from "@/components/ui/Reveal";
+import Portrait from "./Portrait";
 import { principles, stats } from "@/lib/data";
 import { ease } from "@/lib/utils";
 
@@ -26,6 +27,9 @@ export default function About() {
             />
           </div>
         </div>
+
+        {/* portrait */}
+        <Portrait />
 
         {/* stats */}
         <dl className="mt-24 grid grid-cols-2 border-t border-[var(--line)] md:mt-36 lg:grid-cols-4">
