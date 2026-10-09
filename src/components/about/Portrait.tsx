@@ -21,9 +21,9 @@ export default function Portrait() {
       <div className="order-2 lg:order-1 lg:col-span-7">
         <h3 className="display text-[clamp(3.2rem,9.4vw,9.5rem)]" aria-label={profile.name}>
           {[
-            { w: "Nwose", cls: "" },
-            { w: "Onyeka", cls: "font-light text-bone/55" },
             { w: "Divine", cls: "" },
+            { w: "Onyeka", cls: "font-light text-bone/55" },
+            { w: "Nwose", cls: "" },
           ].map(({ w, cls }, i) => (
             <span key={w} aria-hidden className="block overflow-hidden pb-[0.12em] -mb-[0.12em]">
               <motion.span

@@ -4,14 +4,14 @@
  */
 
 export const profile = {
-  name: "Nwose Onyeka Divine",
+  name: "Divine Onyeka Nwose",
   short: "Divine",
   title: "Frontend Developer",
   tagline:
     "Building modern, responsive & scalable web applications with React, Next.js & Tailwind CSS",
   email: "nwosedivine40@gmail.com",
-  github: "https://github.com/", // PLACEHOLDER – add your GitHub profile URL
-  linkedin: "https://www.linkedin.com/", // PLACEHOLDER – add your LinkedIn profile URL
+  github: "https://github.com/Divinenwose", // PLACEHOLDER – add your GitHub profile URL
+  linkedin: "https://www.linkedin.com/in/divine-nwose-a90b2019a", // PLACEHOLDER – add your LinkedIn profile URL
 };
 
 export const navItems = [
