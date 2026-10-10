@@ -84,11 +84,14 @@ export const projects: {
   stack: string[];
   live: string;
   github?: string;
-  /** Screenshot in /public. Leave undefined until the file exists. */
+  /** Screenshot in /public/projects */
   image?: string;
+  /** CSS object-position for the 16:10 crop, e.g. "50% 30%" */
+  imagePosition?: string;
 }[] = [
   {
     slug: "venofateq",
+    image: "/projects/venofateq.webp",
     name: "VenofaTEQ",
     description: "The main website for a technology and software development company, built with a team of junior frontend developers under my lead.",
     category: "Company website",
@@ -98,6 +101,8 @@ export const projects: {
   },
   {
     slug: "storely",
+    image: "/projects/storely.webp",
+    imagePosition: "50% 45%",
     name: "Storely",
     description: "An inventory and business management platform for tracking stock, sales and performance in one place.",
     category: "SaaS platform",
@@ -107,6 +112,7 @@ export const projects: {
   },
   {
     slug: "elevouth",
+    image: "/projects/elevouth.webp",
     name: "Elevouth",
     description: "The main website for Elevouth, built with a team of junior frontend developers and supervised through release.",
     category: "Company website",
@@ -116,6 +122,7 @@ export const projects: {
   },
   {
     slug: "carteon",
+    image: "/projects/carteon.webp",
     name: "Carteon",
     description: "A smart digital business card platform: create, share and update your professional identity with a tap or a scan.",
     category: "Web app",
@@ -125,6 +132,8 @@ export const projects: {
   },
   {
     slug: "jkic-result-portal",
+    image: "/projects/jkic-result-portal.webp",
+    imagePosition: "50% 67%",
     name: "JKIC Result Portal",
     description: "A secure result management portal where administrators, teachers and parents view term-based reports for JSS and SS students.",
     category: "Education system",
@@ -134,6 +143,8 @@ export const projects: {
   },
   {
     slug: "john-kennedy-schools",
+    image: "/projects/john-kennedy-schools.webp",
+    imagePosition: "50% 50%",
     name: "John Kennedy Schools",
     description: "The website for a nursery, primary and secondary school in Surulere, Lagos, with academics, online admissions registration, news and a result portal link.",
     category: "School website",
@@ -143,6 +154,7 @@ export const projects: {
   },
   {
     slug: "nexaerp",
+    image: "/projects/nexaerp.webp",
     name: "NexaERP",
     description: "A cloud ERP platform bringing HR, finance, procurement, CRM, inventory, projects and analytics together for growing businesses.",
     category: "Enterprise software",
@@ -153,6 +165,8 @@ export const projects: {
   },
   {
     slug: "haven-za2-directory",
+    image: "/projects/haven-za2-directory.webp",
+    imagePosition: "50% 33%",
     name: "Haven ZA2 Directory",
     description: "The official listing platform for the Haven ZA2 community, connecting professionals, founders, companies and service providers.",
     category: "Directory platform",

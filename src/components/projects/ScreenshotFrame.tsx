@@ -2,19 +2,21 @@ import Image from "next/image";
 
 /**
  * Browser-style frame around a real screenshot of the live site.
- * The image area is a fixed 16:10 and the shot is cropped from the top,
+ * The image area is a fixed 16:10 and the shot is cropped from the top (or from `position`),
  * so any screenshot proportion works. Without an image it shows a quiet placeholder.
  */
 export default function ScreenshotFrame({
   name,
   live,
   image,
+  position,
   sizes = "(min-width: 768px) 55vw, 94vw",
   priority = false,
 }: {
   name: string;
   live: string;
   image?: string;
+  position?: string;
   sizes?: string;
   priority?: boolean;
 }) {
@@ -36,7 +38,8 @@ export default function ScreenshotFrame({
             sizes={sizes}
             priority={priority}
             quality={85}
-            className="object-cover object-top"
+            className="object-cover"
+            style={{ objectPosition: position ?? "50% 0%" }}
           />
         ) : (
           <div className="grid-lines absolute inset-0 flex items-center justify-center opacity-80">

@@ -57,7 +57,7 @@ export default function ProjectIndex() {
                 transition={{ type: "spring", stiffness: 300, damping: 26 }}
                 className="w-[340px] overflow-hidden rounded-md border border-[var(--line-strong)] shadow-[0_40px_90px_-20px_rgba(0,0,0,0.95)]"
               >
-                <ScreenshotFrame name={projects[hover].name} live={projects[hover].live} image={projects[hover].image} sizes="340px" />
+                <ScreenshotFrame name={projects[hover].name} live={projects[hover].live} image={projects[hover].image} position={projects[hover].imagePosition} sizes="340px" />
               </motion.div>
             )}
           </AnimatePresence>

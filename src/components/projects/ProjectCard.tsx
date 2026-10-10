@@ -74,7 +74,7 @@ export default function ProjectCard({
               transition={{ duration: 1.6, ease }}
             >
               <div className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.045]">
-                <ScreenshotFrame name={project.name} live={project.live} image={project.image} />
+                <ScreenshotFrame name={project.name} live={project.live} image={project.image} position={project.imagePosition} />
               </div>
             </motion.div>
             <motion.div aria-hidden style={{ background: light }} className="pointer-events-none absolute inset-0 opacity-0 mix-blend-screen transition-opacity duration-500 group-hover:opacity-100" />
