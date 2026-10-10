@@ -77,6 +77,8 @@ export const experience = [
 export const projects: {
   slug: string;
   name: string;
+  /** The problem the project set out to solve (one sentence) */
+  problem: string;
   description: string;
   category: string;
   year: string;
@@ -93,6 +95,7 @@ export const projects: {
     slug: "venofateq",
     image: "/projects/venofateq.webp",
     name: "VenofaTEQ",
+    problem: "Three offerings (training, consulting and software) with no single, clear place online to explain them.",
     description: "The main website for a technology and software development company, built with a team of junior frontend developers under my lead.",
     category: "Company website",
     year: "2025",
@@ -104,9 +107,11 @@ export const projects: {
     image: "/projects/storely.webp",
     imagePosition: "50% 45%",
     name: "Storely",
+    problem: "Small businesses juggle stock, orders, payments and customers across separate tools.",
     description: "An inventory and business management platform for tracking stock, sales and performance in one place.",
     category: "SaaS platform",
     year: "2025",
+    status: "In progress",
     stack: ["React", "Redux Toolkit", "Node.js", "PostgreSQL"],
     live: "https://www.appstorely.com/",
   },
@@ -114,6 +119,7 @@ export const projects: {
     slug: "elevouth",
     image: "/projects/elevouth.webp",
     name: "Elevouth",
+    problem: "Learners struggle to turn skills into roles, and companies struggle to find job-ready talent.",
     description: "The main website for Elevouth, built with a team of junior frontend developers and supervised through release.",
     category: "Company website",
     year: "2024",
@@ -124,6 +130,7 @@ export const projects: {
     slug: "carteon",
     image: "/projects/carteon.webp",
     name: "Carteon",
+    problem: "Paper business cards get thrown away, and a professional's details are scattered across platforms.",
     description: "A smart digital business card platform: create, share and update your professional identity with a tap or a scan.",
     category: "Web app",
     year: "2024",
@@ -135,6 +142,7 @@ export const projects: {
     image: "/projects/jkic-result-portal.webp",
     imagePosition: "50% 67%",
     name: "JKIC Result Portal",
+    problem: "Term results reached parents slowly, on paper, with no secure way to check them online.",
     description: "A secure result management portal where administrators, teachers and parents view term-based reports for JSS and SS students.",
     category: "Education system",
     year: "2024",
@@ -146,6 +154,7 @@ export const projects: {
     image: "/projects/john-kennedy-schools.webp",
     imagePosition: "50% 50%",
     name: "John Kennedy Schools",
+    problem: "Parents had no clear online place to learn about the school, see admissions and register.",
     description: "The website for a nursery, primary and secondary school in Surulere, Lagos, with academics, online admissions registration, news and a result portal link.",
     category: "School website",
     year: "2025",
@@ -156,6 +165,7 @@ export const projects: {
     slug: "nexaerp",
     image: "/projects/nexaerp.webp",
     name: "NexaERP",
+    problem: "Growing companies run HR, finance, procurement and sales on disconnected tools.",
     description: "A cloud ERP platform bringing HR, finance, procurement, CRM, inventory, projects and analytics together for growing businesses.",
     category: "Enterprise software",
     year: "2026",
@@ -168,6 +178,7 @@ export const projects: {
     image: "/projects/haven-za2-directory.webp",
     imagePosition: "50% 33%",
     name: "Haven ZA2 Directory",
+    problem: "Community members had no easy way to find each other's skills, services and businesses.",
     description: "The official listing platform for the Haven ZA2 community, connecting professionals, founders, companies and service providers.",
     category: "Directory platform",
     year: "2026",
