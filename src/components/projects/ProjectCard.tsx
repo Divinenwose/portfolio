@@ -100,19 +100,15 @@ export default function ProjectCard({
             <h3 id={`p-${project.slug}`} className="display text-[clamp(2.4rem,4.6vw,4.6rem)]">
               <SplitText text={project.name} />
             </h3>
-            <motion.div
+            <motion.p
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10% 0px" }}
               transition={{ duration: 0.9, ease, delay: 0.25 }}
-              className="mt-5 max-w-md"
+              className="mt-5 max-w-md leading-relaxed text-mute"
             >
-              <div className="border-l border-ember pl-4">
-                <p className="text-xs text-ember">The problem</p>
-                <p className="mt-1 leading-relaxed text-bone/90">{project.problem}</p>
-              </div>
-              <p className="mt-4 leading-relaxed text-mute">{project.description}</p>
-            </motion.div>
+              {project.description}
+            </motion.p>
             <ul className="mt-6 flex flex-wrap gap-2" aria-label={`${project.name} technology stack`}>
               {project.stack.map((t, k) => (
                 <motion.li
