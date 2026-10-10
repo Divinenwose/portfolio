@@ -3,8 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion, useMotionValue, useSpring } from "framer-motion";
 import { projects } from "@/lib/data";
-import Scaler from "./Scaler";
-import ProjectVisual from "./ProjectVisual";
+import ScreenshotFrame from "./ScreenshotFrame";
 
 /** Row list. On desktop a live preview follows the pointer. */
 export default function ProjectIndex() {
@@ -58,7 +57,7 @@ export default function ProjectIndex() {
                 transition={{ type: "spring", stiffness: 300, damping: 26 }}
                 className="w-[340px] overflow-hidden rounded-md border border-[var(--line-strong)] shadow-[0_40px_90px_-20px_rgba(0,0,0,0.95)]"
               >
-                <Scaler><ProjectVisual kind={projects[hover].kind} /></Scaler>
+                <ScreenshotFrame name={projects[hover].name} live={projects[hover].live} image={projects[hover].image} sizes="340px" />
               </motion.div>
             )}
           </AnimatePresence>

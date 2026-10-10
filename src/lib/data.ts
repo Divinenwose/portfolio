@@ -45,16 +45,16 @@ export const experience = [
     company: "Venofa TEQ",
     period: "Lead role",
     summary:
-      "Leading frontend architecture and delivery for a technology and software development company, from design systems to production releases.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      "Built the company's main website with a team of junior frontend developers, and supervised the team: setting standards, reviewing code and guiding delivery to production.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Team leadership"],
   },
   {
     role: "Lead Frontend Developer",
     company: "Elevouth",
     period: "Lead role",
     summary:
-      "Owning the interface layer of a digital platform: component library, state management and performance budgets.",
-    tags: ["Next.js", "Framer Motion", "TanStack Query", "Supabase"],
+      "Built the main website with a team of junior frontend developers, and supervised them through planning, code review and release.",
+    tags: ["Next.js", "Framer Motion", "Code review", "Team leadership"],
   },
   {
     role: "Frontend / Next.js Tutor",
@@ -74,39 +74,45 @@ export const experience = [
   },
 ];
 
-export type VisualKind = "venofa" | "storely" | "carteon" | "elevouth" | "portal" | "carneiz";
-
 export const projects: {
   slug: string;
   name: string;
   description: string;
   category: string;
   year: string;
+  status?: string;
   stack: string[];
   live: string;
   github?: string;
-  kind: VisualKind;
+  /** Screenshot in /public. Leave undefined until the file exists. */
+  image?: string;
 }[] = [
   {
     slug: "venofateq",
     name: "VenofaTEQ",
-    description: "A modern technology and software development platform that presents services, work and team with clarity.",
-    category: "Corporate platform",
+    description: "The main website for a technology and software development company, built with a team of junior frontend developers under my lead.",
+    category: "Company website",
     year: "2025",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    live: "https://example.com/venofateq", // PLACEHOLDER
-    kind: "venofa",
+    live: "https://venofateq.com/",
   },
   {
     slug: "storely",
     name: "Storely",
     description: "An inventory and business management platform for tracking stock, sales and performance in one place.",
-    category: "SaaS dashboard",
+    category: "SaaS platform",
     year: "2025",
     stack: ["React", "Redux Toolkit", "Node.js", "PostgreSQL"],
-    live: "https://example.com/storely", // PLACEHOLDER
-    github: "https://github.com/", // PLACEHOLDER
-    kind: "storely",
+    live: "https://www.appstorely.com/",
+  },
+  {
+    slug: "elevouth",
+    name: "Elevouth",
+    description: "The main website for Elevouth, built with a team of junior frontend developers and supervised through release.",
+    category: "Company website",
+    year: "2024",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    live: "https://www.elevouth.com/",
   },
   {
     slug: "carteon",
@@ -115,40 +121,44 @@ export const projects: {
     category: "Web app",
     year: "2024",
     stack: ["Next.js", "Supabase", "Zustand", "Tailwind CSS"],
-    live: "https://example.com/carteon", // PLACEHOLDER
-    github: "https://github.com/", // PLACEHOLDER
-    kind: "carteon",
+    live: "https://carteon.vercel.app/",
   },
   {
-    slug: "elevouth",
-    name: "Elevouth",
-    description: "A modern digital and technology platform with a fast, motion-rich interface and a scalable component system.",
-    category: "Digital platform",
-    year: "2024",
-    stack: ["Next.js", "TanStack Query", "Supabase", "Framer Motion"],
-    live: "https://example.com/elevouth", // PLACEHOLDER
-    kind: "elevouth",
-  },
-  {
-    slug: "school-result-portal",
-    name: "School Result Portal",
-    description: "A digital result management platform that lets schools publish results and students check them securely.",
+    slug: "jkic-result-portal",
+    name: "JKIC Result Portal",
+    description: "A secure result management portal where administrators, teachers and parents view term-based reports for JSS and SS students.",
     category: "Education system",
-    year: "2023",
+    year: "2024",
     stack: ["React", "Express", "PostgreSQL", "REST APIs"],
-    live: "https://example.com/school-result-portal", // PLACEHOLDER
-    github: "https://github.com/", // PLACEHOLDER
-    kind: "portal",
+    live: "https://jkresultportal.vercel.app/",
   },
   {
-    slug: "carneiz",
-    name: "Carneiz",
-    description: "A modern web experience built around editorial layout, strong type and carefully paced motion.",
-    category: "Web experience",
-    year: "2023",
-    stack: ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
-    live: "https://example.com/carneiz", // PLACEHOLDER
-    kind: "carneiz",
+    slug: "john-kennedy-schools",
+    name: "John Kennedy Schools",
+    description: "The website for a nursery, primary and secondary school in Surulere, Lagos, with academics, online admissions registration, news and a result portal link.",
+    category: "School website",
+    year: "2025",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    live: "https://johnkennedyschools.vercel.app/",
+  },
+  {
+    slug: "nexaerp",
+    name: "NexaERP",
+    description: "A cloud ERP platform bringing HR, finance, procurement, CRM, inventory, projects and analytics together for growing businesses.",
+    category: "Enterprise software",
+    year: "2026",
+    status: "In progress",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "TanStack Query"],
+    live: "https://erp-alpha-bice.vercel.app/",
+  },
+  {
+    slug: "haven-za2-directory",
+    name: "Haven ZA2 Directory",
+    description: "The official listing platform for the Haven ZA2 community, connecting professionals, founders, companies and service providers.",
+    category: "Directory platform",
+    year: "2026",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    live: "https://directory-sage-alpha.vercel.app/",
   },
 ];
 

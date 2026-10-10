@@ -24,7 +24,7 @@ export default function Projects() {
           </h2>
           <Reveal className="md:col-span-3 md:pb-4" delay={0.2}>
             <p className="max-w-xs text-mute">
-              Six products, from business platforms to editorial experiences. Each one designed, built and shipped end to end.
+              Eight live products, from company websites to business platforms. Each one designed, built and shipped end to end.
             </p>
           </Reveal>
         </header>

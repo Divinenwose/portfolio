@@ -3,8 +3,7 @@
 import { useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform, type MotionValue } from "framer-motion";
 import type { projects } from "@/lib/data";
-import Scaler from "./Scaler";
-import ProjectVisual from "./ProjectVisual";
+import ScreenshotFrame from "./ScreenshotFrame";
 import SplitText from "@/components/ui/SplitText";
 import Button from "@/components/ui/Button";
 import { cn, ease } from "@/lib/utils";
@@ -75,7 +74,7 @@ export default function ProjectCard({
               transition={{ duration: 1.6, ease }}
             >
               <div className="transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.045]">
-                <Scaler><ProjectVisual kind={project.kind} /></Scaler>
+                <ScreenshotFrame name={project.name} live={project.live} image={project.image} />
               </div>
             </motion.div>
             <motion.div aria-hidden style={{ background: light }} className="pointer-events-none absolute inset-0 opacity-0 mix-blend-screen transition-opacity duration-500 group-hover:opacity-100" />
@@ -86,7 +85,15 @@ export default function ProjectCard({
         <div className={cn("flex flex-col justify-between gap-8 py-2 md:col-span-5 md:py-4", flip && "md:order-1 md:pl-3", !flip && "md:pr-3")}>
           <div className="flex items-center justify-between font-mono text-xs text-mute">
             <span>{project.category}</span>
-            <span>{project.year}</span>
+            <span className="flex items-center gap-3">
+              {project.status && (
+                <span className="flex items-center gap-1.5 rounded-full border border-[var(--line-strong)] px-2.5 py-0.5 text-[11px] text-bone">
+                  <span className="h-1.5 w-1.5 rounded-full bg-ember" />
+                  {project.status}
+                </span>
+              )}
+              {project.year}
+            </span>
           </div>
 
           <div>
