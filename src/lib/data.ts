@@ -10,6 +10,8 @@ export const profile = {
   tagline:
     "Building modern, responsive & scalable web applications with React, Next.js & Tailwind CSS",
   email: "nwosedivine40@gmail.com",
+  // WhatsApp (Nigeria): 08069248565 -> 2348069248565, opens a chat with the message below pre-filled
+  whatsapp: `https://wa.me/2348069248565?text=${encodeURIComponent("Hi Divine, I saw your portfolio and I would like to talk about a project.")}`,
   github: "https://github.com/Divinenwose", // PLACEHOLDER – add your GitHub profile URL
   linkedin: "https://www.linkedin.com/in/divine-nwose-a90b2019a", // PLACEHOLDER – add your LinkedIn profile URL
 };
@@ -24,7 +26,7 @@ export const navItems = [
 ] as const;
 
 export const stats = [
-  { value: 4, suffix: "+", label: "Years experience" },
+  { value: 5, suffix: "+", label: "Years experience" },
   { value: 10, suffix: "+", label: "Projects shipped" },
   { value: 10, suffix: "+", label: "Technologies" },
   { value: null, suffix: "∞", label: "Curiosity" },

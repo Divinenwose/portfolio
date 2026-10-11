@@ -119,6 +119,7 @@ export default function Contact() {
           <Reveal className="md:col-span-4 md:col-start-9" delay={0.1}>
             <p className="mb-3 text-sm text-mute">Elsewhere</p>
             <div className="flex flex-col items-start gap-3">
+              <Social href={profile.whatsapp} label="WhatsApp" />
               <Social href={profile.github} label="GitHub" />
               <Social href={profile.linkedin} label="LinkedIn" />
             </div>

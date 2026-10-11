@@ -13,6 +13,7 @@ export default function Footer() {
         </div>
 
         <nav aria-label="Social" className="flex gap-6 text-sm md:col-span-4 md:justify-center">
+          <a href={profile.whatsapp} target="_blank" rel="noopener noreferrer" className="text-mute transition-colors hover:text-ember">WhatsApp</a>
           <a href={profile.github} target="_blank" rel="noopener noreferrer" className="text-mute transition-colors hover:text-ember">GitHub</a>
           <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="text-mute transition-colors hover:text-ember">LinkedIn</a>
           <a href={`mailto:${profile.email}`} className="text-mute transition-colors hover:text-ember">Email</a>

@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Nwose Onyeka Divine | Frontend Developer",
   description:
-    "Frontend developer with 4+ years of experience building modern, responsive and scalable web applications with React, Next.js and Tailwind CSS.",
+    "Frontend developer with 5+ years of experience building modern, responsive and scalable web applications with React, Next.js and Tailwind CSS.",
   openGraph: {
     title: "Nwose Onyeka Divine | Frontend Developer",
     description: "Modern, responsive and scalable web applications with React, Next.js and Tailwind CSS.",
