@@ -31,20 +31,6 @@ function Item({ e, i, lit }: { e: (typeof experience)[number]; i: number; lit: b
         </div>
         <p className="relative mt-2 text-lg text-ember">{e.company}</p>
         <p className="relative mt-5 max-w-2xl leading-relaxed text-mute">{e.summary}</p>
-        <ul className="relative mt-7 flex flex-wrap gap-2" aria-label="Technologies">
-          {e.tags.map((t, k) => (
-            <motion.li
-              key={t}
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, ease, delay: 0.3 + k * 0.06 }}
-              className="rounded-full border border-[var(--line)] px-3.5 py-1.5 text-[13px] text-bone/80 transition-colors duration-300 group-hover:border-[var(--line-strong)]"
-            >
-              {t}
-            </motion.li>
-          ))}
-        </ul>
       </article>
     </motion.li>
   );
@@ -70,7 +56,7 @@ export default function Experience() {
               <span className="font-light text-bone/55">led and built</span>
             </h2>
             <p className="mt-6 max-w-sm text-mute">
-              From leading product interfaces to teaching the next wave of developers, always close to the code.
+              From leading teams to shipping products, always close to the code.
             </p>
           </div>
         </div>

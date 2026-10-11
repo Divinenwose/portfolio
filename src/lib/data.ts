@@ -24,8 +24,8 @@ export const navItems = [
 ] as const;
 
 export const stats = [
-  { value: 5, suffix: "+", label: "Years experience" },
-  { value: 20, suffix: "+", label: "Projects shipped" },
+  { value: 4, suffix: "+", label: "Years experience" },
+  { value: 10, suffix: "+", label: "Projects shipped" },
   { value: 10, suffix: "+", label: "Technologies" },
   { value: null, suffix: "∞", label: "Curiosity" },
 ] as const;
@@ -46,7 +46,6 @@ export const experience = [
     period: "Lead role",
     summary:
       "Built the company's main website with a team of junior frontend developers, and supervised the team: setting standards, reviewing code and guiding delivery to production.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Team leadership"],
   },
   {
     role: "Lead Frontend Developer",
@@ -54,15 +53,6 @@ export const experience = [
     period: "Lead role",
     summary:
       "Built the main website with a team of junior frontend developers, and supervised them through planning, code review and release.",
-    tags: ["Next.js", "Framer Motion", "Code review", "Team leadership"],
-  },
-  {
-    role: "Frontend / Next.js Tutor",
-    company: "TechAcademy Solution",
-    period: "Mentoring",
-    summary:
-      "Teaching React and Next.js to aspiring developers, turning fundamentals into portfolio-ready projects.",
-    tags: ["React", "Next.js", "JavaScript", "Mentoring"],
   },
   {
     role: "Freelance Frontend Developer",
@@ -70,7 +60,6 @@ export const experience = [
     period: "2021 – Present",
     summary:
       "Designing and building websites and web apps for clients: Figma-to-code, dashboards, business platforms and everything between.",
-    tags: ["Figma-to-code", "Node.js", "PostgreSQL", "Accessibility"],
   },
 ];
 
@@ -96,7 +85,7 @@ export const projects: {
     description: "The main website for a technology and software development company, built with a team of junior frontend developers under my lead.",
     category: "Company website",
     year: "2025",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    stack: ["React.js", "API integration", "Tailwind CSS", "Figma to code", "Framer Motion", "Responsive design"],
     live: "https://venofateq.com/",
   },
   {
@@ -108,7 +97,7 @@ export const projects: {
     category: "SaaS platform",
     year: "2025",
     status: "In progress",
-    stack: ["React", "Redux Toolkit", "Node.js", "PostgreSQL"],
+    stack: ["React.js", "Tailwind CSS", "API integration", "Figma to code", "Redux Toolkit"],
     live: "https://www.appstorely.com/",
   },
   {
@@ -118,7 +107,7 @@ export const projects: {
     description: "The main website for Elevouth, built with a team of junior frontend developers and supervised through release.",
     category: "Company website",
     year: "2024",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    stack: ["React.js", "Vanilla CSS", "Node.js", "Payment integration", "Express"],
     live: "https://www.elevouth.com/",
   },
   {
@@ -128,7 +117,7 @@ export const projects: {
     description: "A smart digital business card platform: create, share and update your professional identity with a tap or a scan.",
     category: "Web app",
     year: "2024",
-    stack: ["Next.js", "Supabase", "Zustand", "Tailwind CSS"],
+    stack: ["React.js", "Tailwind CSS", "Payment integration", "API integration", "Framer Motion", "Figma to code", "Zustand"],
     live: "https://carteon.vercel.app/",
   },
   {
@@ -139,7 +128,7 @@ export const projects: {
     description: "A secure result management portal where administrators, teachers and parents view term-based reports for JSS and SS students.",
     category: "Education system",
     year: "2024",
-    stack: ["React", "Express", "PostgreSQL", "REST APIs"],
+    stack: ["React.js", "Tailwind CSS", "Supabase", "TypeScript", "TanStack Query"],
     live: "https://jkresultportal.vercel.app/",
   },
   {
@@ -150,7 +139,7 @@ export const projects: {
     description: "The website for a nursery, primary and secondary school in Surulere, Lagos, with academics, online admissions registration, news and a result portal link.",
     category: "School website",
     year: "2025",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    stack: ["Next.js", "TypeScript", "Supabase", "Framer Motion", "Tailwind CSS"],
     live: "https://johnkennedyschools.vercel.app/",
   },
   {
@@ -161,7 +150,7 @@ export const projects: {
     category: "Enterprise software",
     year: "2026",
     status: "In progress",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "TanStack Query"],
+    stack: ["Next.js", "Supabase", "PostgreSQL", "TypeScript"],
     live: "https://erp-alpha-bice.vercel.app/",
   },
   {
@@ -172,7 +161,7 @@ export const projects: {
     description: "The official listing platform for the Haven ZA2 community, connecting professionals, founders, companies and service providers.",
     category: "Directory platform",
     year: "2026",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+    stack: ["React.js", "Framer Motion", "Supabase", "Tailwind CSS"],
     live: "https://directory-sage-alpha.vercel.app/",
   },
 ];
