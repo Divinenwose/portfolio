@@ -45,14 +45,14 @@ export const experience = [
   {
     role: "Lead Frontend Developer",
     company: "Venofa TEQ",
-    period: "Lead role",
+    period: "2025 – Present",
     summary:
       "Built the company's main website with a team of junior frontend developers, and supervised the team: setting standards, reviewing code and guiding delivery to production.",
   },
   {
     role: "Lead Frontend Developer",
     company: "Elevouth",
-    period: "Lead role",
+    period: "2024 – Present, contract",
     summary:
       "Built the main website with a team of junior frontend developers, and supervised them through planning, code review and release.",
   },
