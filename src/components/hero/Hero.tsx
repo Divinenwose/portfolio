@@ -9,7 +9,7 @@ import HeroVisual from "./HeroVisual";
 import { ease } from "@/lib/utils";
 
 const label = "FRONTEND DEVELOPER / CREATIVE ENGINEER";
-const ticker = ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux Toolkit", "TanStack Query", "Node.js", "Supabase", "PostgreSQL"];
+const ticker = ["React (Vite)", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux Toolkit", "TanStack Query", "Node.js", "Supabase", "PostgreSQL"];
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);

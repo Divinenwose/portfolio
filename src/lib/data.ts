@@ -87,7 +87,7 @@ export const projects: {
     description: "The main website for a technology and software development company, built with a team of junior frontend developers under my lead.",
     category: "Company website",
     year: "2026",
-    stack: ["React.js", "API integration", "Tailwind CSS", "Figma to code", "Framer Motion", "Responsive design"],
+    stack: ["React.js (Vite)", "API integration", "Tailwind CSS", "Figma to code", "Framer Motion", "Responsive design"],
     live: "https://venofateq.com/",
   },
   {
@@ -99,7 +99,7 @@ export const projects: {
     category: "SaaS platform",
     year: "2026",
     status: "In progress",
-    stack: ["React.js", "Tailwind CSS", "API integration", "Figma to code", "Redux Toolkit"],
+    stack: ["React.js (Vite)", "Tailwind CSS", "API integration", "Figma to code", "Redux Toolkit"],
     live: "https://www.appstorely.com/",
   },
   {
@@ -109,7 +109,7 @@ export const projects: {
     description: "The main website for Elevouth, built with a team of junior frontend developers and supervised through release.",
     category: "Company website",
     year: "2024",
-    stack: ["React.js", "Vanilla CSS", "Node.js", "Payment integration", "Express"],
+    stack: ["React.js (Vite)", "Vanilla CSS", "Node.js", "Payment integration", "Express"],
     live: "https://www.elevouth.com/",
   },
   {
@@ -119,7 +119,7 @@ export const projects: {
     description: "A smart digital business card platform: create, share and update your professional identity with a tap or a scan.",
     category: "Web app",
     year: "2025",
-    stack: ["React.js", "Tailwind CSS", "Payment integration", "API integration", "Framer Motion", "Figma to code", "Zustand"],
+    stack: ["React.js (Vite)", "Tailwind CSS", "Payment integration", "API integration", "Framer Motion", "Figma to code", "Zustand"],
     live: "https://carteon.vercel.app/",
   },
   {
@@ -130,7 +130,7 @@ export const projects: {
     description: "A secure result management portal where administrators, teachers and parents view term-based reports for JSS and SS students.",
     category: "Education system",
     year: "2025",
-    stack: ["React.js", "Tailwind CSS", "Supabase", "TypeScript", "TanStack Query"],
+    stack: ["React.js (Vite)", "Tailwind CSS", "Supabase", "TypeScript", "TanStack Query"],
     live: "https://jkresultportal.vercel.app/",
   },
   {
@@ -163,7 +163,7 @@ export const projects: {
     description: "The official listing platform for the Haven ZA2 community, connecting professionals, founders, companies and service providers.",
     category: "Directory platform",
     year: "2026",
-    stack: ["React.js", "Framer Motion", "Supabase", "Tailwind CSS"],
+    stack: ["React.js (Vite)", "Framer Motion", "Supabase", "Tailwind CSS"],
     live: "https://directory-sage-alpha.vercel.app/",
   },
   {
@@ -179,7 +179,7 @@ export const projects: {
 ];
 
 export const skillRows = [
-  { label: "Frontend", items: ["React", "Next.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"], dur: 38, rev: false },
+  { label: "Frontend", items: ["React (Vite)", "Next.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"], dur: 38, rev: false },
   { label: "State & Data", items: ["Redux Toolkit", "Zustand", "TanStack Query", "Context API"], dur: 46, rev: true },
   { label: "Backend", items: ["Node.js", "Express", "REST APIs"], dur: 34, rev: false },
   { label: "Database", items: ["Supabase", "PostgreSQL"], dur: 42, rev: true },
