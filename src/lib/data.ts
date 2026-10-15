@@ -166,6 +166,16 @@ export const projects: {
     stack: ["React.js", "Framer Motion", "Supabase", "Tailwind CSS"],
     live: "https://directory-sage-alpha.vercel.app/",
   },
+  {
+    slug: "script-benin",
+    image: "/projects/script-benin.webp",
+    name: "Script Experience Benin 2026",
+    description: "A trip-planning site for a group journey from Lagos to Cotonou: countdown, itinerary, packing list, stays, a vote on transport and payments, all in one place.",
+    category: "Event platform",
+    year: "2026",
+    stack: ["React.js (Vite)", "Supabase", "Framer Motion", "Tailwind CSS"],
+    live: "https://benin-trip.vercel.app/",
+  },
 ];
 
 export const skillRows = [
