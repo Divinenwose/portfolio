@@ -200,6 +200,7 @@ export const testimonials = [
     name: "Toluwani Ogundele",
     role: "Founder, Elevouth",
     initials: "TO",
+    photo: "/testimonials/toluwani-ogundele.webp",
     pull: "From its simplicity and functionality to the overall look and user experience, he did an amazing job bringing our vision to life.",
     paragraphs: [
       "Divine is one of the amazing developers I’ve had the pleasure of working with, and his contributions to Elevouth and Elevouth Labs have been immense.",
@@ -214,6 +215,7 @@ export const testimonials = [
     name: "Favour Osaro",
     role: "IT Project Manager",
     initials: "FO",
+    photo: "/testimonials/favour-osaro.webp",
     pull: "He puts the quality of the work before money, respects deadlines, and is sincere and down to earth.",
     paragraphs: [
       "Working with Divine has been a genuine pleasure. We have delivered several IT projects together, and he consistently stands out as one of the most reliable front-end developers I have worked with.",

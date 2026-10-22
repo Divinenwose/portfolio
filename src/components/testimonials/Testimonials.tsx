@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { testimonials } from "@/lib/data";
 import ScrubText from "@/components/ui/ScrubText";
@@ -77,8 +78,16 @@ function Quote({ t, flip }: { t: T; flip: boolean }) {
         )}
 
         <figcaption className="mt-10 flex items-center gap-4 border-t border-[var(--line)] pt-6">
-          <span aria-hidden className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-ember/60 bg-ink-3 text-[13px] font-medium tracking-wide">
-            {t.initials}
+          <span className="relative block h-16 w-16 shrink-0 md:h-[72px] md:w-[72px]">
+            <span aria-hidden className="absolute -inset-1 rounded-full border border-ember/60" />
+            <Image
+              src={t.photo}
+              alt={`Portrait of ${t.name}`}
+              width={144}
+              height={144}
+              sizes="72px"
+              className="h-full w-full rounded-full object-cover"
+            />
           </span>
           <span>
             <span className="block text-lg font-medium tracking-tight">{t.name}</span>
