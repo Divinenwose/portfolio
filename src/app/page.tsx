@@ -6,6 +6,7 @@ import Experience from "@/components/experience/Experience";
 import Projects from "@/components/projects/Projects";
 import Skills from "@/components/skills/Skills";
 import Services from "@/components/services/Services";
+import Testimonials from "@/components/testimonials/Testimonials";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
 import SmoothScroll from "@/components/ui/SmoothScroll";
@@ -35,6 +36,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Services />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />

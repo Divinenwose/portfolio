@@ -193,3 +193,32 @@ export const services = [
   { id: "perf", title: "Performance & Optimization", text: "Fast, accessible and optimized web experiences." },
   { id: "responsive", title: "Responsive Design", text: "Interfaces that work beautifully across desktop, tablet and mobile." },
 ];
+
+/** Testimonials: wording is the author's own, shown verbatim. */
+export const testimonials = [
+  {
+    name: "Toluwani Ogundele",
+    role: "Founder, Elevouth",
+    initials: "TO",
+    pull: "From its simplicity and functionality to the overall look and user experience, he did an amazing job bringing our vision to life.",
+    paragraphs: [
+      "Divine is one of the amazing developers I’ve had the pleasure of working with, and his contributions to Elevouth and Elevouth Labs have been immense.",
+      "Last year, he worked with me on the development of Elevouth’s website, and till today, we still receive compliments from people who visit the website. From its simplicity and functionality to the overall look and user experience, he did an amazing job bringing our vision to life.",
+      "He also developed the event page for Global Talent Summit 2025, and that was another project he delivered really well.",
+      "One thing I particularly appreciate about Divine is how proactive and fast he is when it comes to delivery. Sometimes, I see a task that I expect will take a while, and before you know it, Divine is already back with a working solution. And it's not just about speed. The quality of his work is impressive, and we rarely have issues with his deliverables.",
+      "Earlier this year, he also led the development team at Elevouth Labs, working on one of our software products, and he did a great job in that capacity.",
+      "Beyond his technical skills, Divine is willing to learn, open to new ideas, and always looking for ways to get better. He’s someone I’ve genuinely enjoyed working with, and I look forward to seeing all the amazing things he’ll go on to build.",
+    ],
+  },
+  {
+    name: "Favour Osaro",
+    role: "IT Project Manager",
+    initials: "FO",
+    pull: "He puts the quality of the work before money, respects deadlines, and is sincere and down to earth.",
+    paragraphs: [
+      "Working with Divine has been a genuine pleasure. We have delivered several IT projects together, and he consistently stands out as one of the most reliable front-end developers I have worked with.",
+      "Divine is patient, detail-oriented and an excellent communicator. He keeps the team informed, asks the right questions, and makes collaboration easy. He is open to feedback and always eager to grow.",
+      "What I value most is his character. He puts the quality of the work before money, respects deadlines, and is sincere and down to earth. Any team or organisation would be fortunate to have Divine on board.",
+    ],
+  },
+];

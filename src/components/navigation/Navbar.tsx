@@ -8,7 +8,7 @@ import { scrollToId } from "@/components/ui/SmoothScroll";
 import Magnetic from "@/components/ui/Magnetic";
 
 // services sits between skills and contact, so it counts toward "Skills"
-const observed = ["home", "about", "experience", "projects", "skills", "services", "contact"];
+const observed = ["home", "about", "experience", "projects", "skills", "services", "testimonials", "contact"];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,7 +28,7 @@ export default function Navbar() {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
-          if (e.isIntersecting) setActive(e.target.id === "services" ? "skills" : e.target.id);
+          if (e.isIntersecting) setActive(e.target.id === "services" || e.target.id === "testimonials" ? "skills" : e.target.id);
         });
       },
       { rootMargin: "-45% 0px -50% 0px" },
