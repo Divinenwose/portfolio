@@ -54,7 +54,7 @@ export const experience = [
     company: "Elevouth",
     period: "2024 – Present, contract",
     summary:
-      "Built the main website with a team of junior frontend developers, and supervised them through planning, code review and release.",
+      "Built the main website, including the Global Talent Summit 2025 event page, with a team of junior frontend developers, and supervised them through planning, code review and release. Also led the development team at Elevouth Labs on Storely.",
   },
   {
     role: "Freelance Frontend Developer",
@@ -95,7 +95,7 @@ export const projects: {
     image: "/projects/storely.webp",
     imagePosition: "50% 45%",
     name: "Storely",
-    description: "An inventory and business management platform for tracking stock, sales and performance in one place.",
+    description: "An inventory and business management platform for tracking stock, sales and performance in one place. Built as a product at Elevouth Labs, where I led the development team.",
     category: "SaaS platform",
     year: "2026",
     status: "In progress",
@@ -106,7 +106,7 @@ export const projects: {
     slug: "elevouth",
     image: "/projects/elevouth.webp",
     name: "Elevouth",
-    description: "The main website for Elevouth, built with a team of junior frontend developers and supervised through release.",
+    description: "The main website for Elevouth, including the Global Talent Summit 2025 event page, built with a team of junior frontend developers and supervised through release.",
     category: "Company website",
     year: "2024",
     stack: ["React.js (Vite)", "Vanilla CSS", "Node.js", "Payment integration", "Express"],
