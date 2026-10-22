@@ -7,7 +7,7 @@ import { cn, ease, easeInOut } from "@/lib/utils";
 import { scrollToId } from "@/components/ui/SmoothScroll";
 import Magnetic from "@/components/ui/Magnetic";
 
-// services sits between skills and contact, so it counts toward "Skills"
+// services sits right after skills, so it counts toward "Skills"
 const observed = ["home", "about", "experience", "projects", "skills", "services", "testimonials", "contact"];
 
 export default function Navbar() {
@@ -28,7 +28,7 @@ export default function Navbar() {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
-          if (e.isIntersecting) setActive(e.target.id === "services" || e.target.id === "testimonials" ? "skills" : e.target.id);
+          if (e.isIntersecting) setActive(e.target.id === "services" ? "skills" : e.target.id);
         });
       },
       { rootMargin: "-45% 0px -50% 0px" },
@@ -146,7 +146,7 @@ export default function Navbar() {
             animate={{ clipPath: "circle(150% at calc(100% - 2.5rem) 2.75rem)" }}
             exit={{ clipPath: "circle(0% at calc(100% - 2.5rem) 2.75rem)", transition: { duration: 0.6, ease: easeInOut } }}
             transition={{ duration: 0.9, ease: easeInOut }}
-            className="fixed inset-0 z-[70] flex flex-col justify-between bg-ink-2 px-6 pb-8 pt-28 lg:hidden"
+            className="fixed inset-0 z-[70] flex flex-col justify-between overflow-y-auto bg-ink-2 px-6 pb-8 pt-24 lg:hidden"
           >
             <ul className="flex flex-col">
               {navItems.map((n, i) => (
@@ -157,7 +157,7 @@ export default function Navbar() {
                     initial={{ y: "100%" }}
                     animate={{ y: 0, transition: { duration: 0.8, ease, delay: 0.25 + i * 0.06 } }}
                     exit={{ y: "100%", transition: { duration: 0.3 } }}
-                    className={cn("flex items-baseline justify-between py-4 text-[clamp(2.1rem,10vw,3.25rem)] font-medium tracking-tight", active === n.id ? "text-bone" : "text-bone/55")}
+                    className={cn("flex items-baseline justify-between py-3 text-[clamp(1.9rem,8.6vw,3rem)] font-medium tracking-tight", active === n.id ? "text-bone" : "text-bone/55")}
                   >
                     {n.label}
                     {active === n.id && <span className="h-2 w-2 rounded-full bg-ember" aria-hidden />}
@@ -165,7 +165,7 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.7 } }} exit={{ opacity: 0 }} className="flex items-center justify-between text-sm text-mute">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.7 } }} exit={{ opacity: 0 }} className="mt-8 flex items-center justify-between text-sm text-mute">
               <a href="#contact" onClick={go("contact")} className="rounded-full bg-ember px-6 py-3 font-medium text-black">Let&apos;s Talk</a>
               <span>Frontend Developer</span>
             </motion.div>
